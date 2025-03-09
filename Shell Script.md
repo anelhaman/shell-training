@@ -247,14 +247,3 @@ Good: `retry_count=5`
 set -e  # Exit immediately if a command fails
 ```
 
-✅ **Use `getopts` for Argument Parsing**  
-```sh
-while getopts u:p: flag
-do
-    case "${flag}" in
-        u) user=${OPTARG};;
-        p) pass=${OPTARG};;
-    esac
-done
-```
-
